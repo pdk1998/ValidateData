@@ -1,0 +1,14 @@
+# This is an example input file.
+# lines beginning with a hash (like this one) must be ignored.
+1 2 3 4 5 6 7 8 9 # [A] Each 9 digit row MUST contain all digits from 1-9
+7 8 9 1 2 3 4 5 6 # [B] Each 9 digit column MUST contain all digits from 1-9
+4 5 6 7 8 9 1 2 3
+9 1 2 3 4 5 6 7 8 # There are 9 3x3 digit, non-overlapping tiles in the input.
+6 7 8 9 1 2 3 4 5 # [C] The 9 digits in each such tile MUST contain all digits from 1-9
+3 4 5 6 7 8 9 1 2
+8 9 1 2 3 4 5 6 7 Extra chars after 9 digits must be ignored
+5 6 7 8 9 1 2 3 4 2 (so this last 2 will be ignored)
+2 3 4 5 6 7 8 9 1
+Any additional lines after 9 MUST be ignored. (so this line will not be parsed).
+0 2 4 6 8 1 3 5 7 9
+Note: The 9x9 grid above is an example that confirms to the A-B-C constraints (it will pass).
